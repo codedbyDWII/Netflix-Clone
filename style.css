@@ -1,0 +1,121 @@
+body{
+  background-color: black;
+  font-family: "Martel Sans", sans-serif;
+}
+.banner{
+  background-image: url("https://assets.codepen.io/17809189/netflix-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  position: relative;
+}
+
+.overlay{
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, .85),
+    rgba(0, 0, 0, .40),
+    rgba(0, 0, 0, .85));
+  
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+}
+
+.logo{
+  width: 150px;
+  z-index: 2;
+}
+
+.nav{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+  padding: 20px;
+}
+
+.signin{
+  width: 80px;
+  height: 30px;
+  font-size: 12px;
+}
+
+.language{
+  background-color: rgba(50, 50, 50, 70%);
+  width: 90px;
+  height: 20px;
+  color: white;
+  border: 0.2px solid white;
+}
+
+
+h1{
+  color: white; 
+  font-size: 50px;
+  font-weight: 900;
+  line-height: 60px;
+  width: 560px;
+  margin: 5px;
+  margin-top: 200px;
+  margin-bottom: 6px;
+  text-align: center;
+}
+
+p{
+  color: white;
+  margin: 0;
+}
+
+.subtitle{
+    margin-bottom: 15px;
+}
+
+.description{
+  font-size: 13px;
+    margin-bottom: 20px;
+}
+
+.hero{
+  display:flex;
+  flex-direction:column;
+  height: 50vh;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+}
+
+input{
+  font-size: 13px;
+  width:340px;
+  height: 40px;
+  background-color: rgba(50, 50, 50, 70%);
+  border: 1px solid white;
+  border-radius: 5px;
+  padding-left: 15px;
+  
+}
+
+button{
+  background-color: red;
+  border: 1px red;
+  font-size: 15px;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  width: 150px;
+  height: 45px;
+  margin-left:10px;
+}
+
+.signup{
+  display:flex;
+  flex-direction:row;
+  height: 10vh;
+  justify-content: center;
+  align-items: center;}
