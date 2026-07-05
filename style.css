@@ -1,28 +1,8 @@
-body{
-  background-color: black;
-  font-family: "Martel Sans", sans-serif;
-}
-.banner{
-  background-image: url("https://assets.codepen.io/17809189/netflix-bg.jpg");
-  background-size: cover;
-  background-position: center;
-  height: 100vh;
-  position: relative;
-}
+/* GLOBAL STYLES */
 
-.overlay{
-  background: linear-gradient(
-    to bottom,
-    rgba(0, 0, 0, .85),
-    rgba(0, 0, 0, .40),
-    rgba(0, 0, 0, .85));
-  
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  z-index: 1;
+body{
+  background-color: rgb(121, 0, 0);
+  font-family: "Martel Sans", sans-serif;
 }
 
 .logo{
@@ -30,7 +10,7 @@ body{
   z-index: 2;
 }
 
-.nav{
+.global-nav{
   display:flex;
   justify-content: space-between;
   align-items: center;
@@ -39,22 +19,42 @@ body{
   padding: 20px;
 }
 
-.signin{
-  width: 80px;
-  height: 30px;
-  font-size: 12px;
+
+/* LANDING PAGE STYLES */
+
+.landing-banner{
+  background-image: url("https://assets.codepen.io/17809189/netflix-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  position: relative;
 }
 
-.language{
-  background-color: rgba(50, 50, 50, 70%);
-  width: 90px;
-  height: 20px;
-  color: white;
-  border: 0.2px solid white;
+.landing-overlay{
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, .85),
+    rgba(0, 0, 0, .40),
+    rgba(0, 0, 0, .85));
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
 }
 
+.landing-hero{
+  display:flex;
+  flex-direction:column;
+  height: 50vh;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+}
 
-h1{
+.landing-title{
   color: white; 
   font-size: 50px;
   font-weight: 900;
@@ -66,31 +66,19 @@ h1{
   text-align: center;
 }
 
-p{
+.landing-subtitle{
   color: white;
   margin: 0;
 }
 
-.subtitle{
-    margin-bottom: 15px;
-}
-
-.description{
+.landing-description{
   font-size: 13px;
-    margin-bottom: 20px;
+  margin-bottom: 20px;
+  color: white;
+
 }
 
-.hero{
-  display:flex;
-  flex-direction:column;
-  height: 50vh;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  z-index: 2;
-}
-
-input{
+.landing-input{
   font-size: 13px;
   width:340px;
   height: 40px;
@@ -98,24 +86,138 @@ input{
   border: 1px solid white;
   border-radius: 5px;
   padding-left: 15px;
-  
 }
 
-button{
+.landing-signup{
+  display:flex;
+  flex-direction:row;
+  height: 10vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.started-button{
   background-color: red;
   border: 1px red;
   font-size: 15px;
   border-radius: 5px;
   color: white;
   font-weight: bold;
-  width: 150px;
+  width: 250px;
   height: 45px;
   margin-left:10px;
 }
 
-.signup{
-  display:flex;
-  flex-direction:row;
-  height: 10vh;
-  justify-content: center;
-  align-items: center;}
+.signin-button{
+ display: inline-block;
+  background-color: red;
+  color: white;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: bold;
+  width: 80px;
+  height: 35px;
+  border-radius: 5px;
+  text-align: center;
+  line-height: 35px;
+}
+
+.landing-language{
+  background-color: rgba(50, 50, 50, 70%);
+  width: 90px;
+  height: 20px;
+  color: white;
+  border: 0.2px solid white;
+}
+
+/* SIGN-IN PAGE STYLES */
+
+.signin-hero{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    margin-left: 90px;
+    margin-top: 50px;
+
+}
+
+.signin-title{
+  color: white; 
+  font-size: 30px;
+  font-weight: 900;
+  line-height: 20px;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.signin-subtitle{
+    color: gray;
+    margin-bottom: 20px;
+    margin-right: 220px;
+}
+
+.signin-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 100px;
+    gap: 20px;
+}
+
+.signin-input{
+  font-size: 13px;
+  width:340px;
+  height: 40px;
+  background-color: rgba(24, 24, 24, 0.7);
+  border: 1px solid red;
+  border-radius: 5px;
+  padding-left: 15px;
+}
+
+.continue-button{
+  display: inline-block;
+  background-color: red;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  font-size: 12px;
+  padding: 8px 16px;
+  border-radius: 5px;
+  border-color: red;
+  width: 360px;
+  height: 45px;
+  margin-left: 0;
+}
+
+.signin-help{
+    background: none;
+    text-decoration: none;
+    border: none;
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    margin-top: 40px;
+    margin-right: 380px;
+}
+
+.captcha{
+    color: gray;
+    font-size: 10px;
+    margin-right: 130px;
+
+}
+
+.signin-overlay{
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, .85),
+    rgba(0, 0, 0, 0.567),
+    rgba(0, 0, 0, .85));
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+}
