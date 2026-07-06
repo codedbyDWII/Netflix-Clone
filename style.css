@@ -1,8 +1,9 @@
 /* GLOBAL STYLES */
 
 body{
-  background-color: rgb(121, 0, 0);
-  font-family: "Martel Sans", sans-serif;
+    margin: 0;
+    background-color: black;  
+    font-family: "Martel Sans", sans-serif;
 }
 
 .logo{
@@ -31,18 +32,16 @@ body{
 }
 
 .landing-overlay{
-  background: linear-gradient(
-    to bottom,
-    rgba(0, 0, 0, .85),
-    rgba(0, 0, 0, .40),
-    rgba(0, 0, 0, .85));
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  z-index: 1;
-}
+    background: linear-gradient( 
+    to bottom, rgba(0, 0, 0, .85), 
+    rgba(0, 0, 0, .40), 
+    rgba(0, 0, 0, .85)); 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    height: 100%; 
+    width: 100%; 
+    z-index: 1; }
 
 .landing-hero{
   display:flex;
@@ -138,7 +137,8 @@ body{
     align-items: center;
     margin-left: 90px;
     margin-top: 50px;
-
+    position: relative;
+    z-index: 2;
 }
 
 .signin-title{
@@ -211,13 +211,53 @@ body{
 .signin-overlay{
   background: linear-gradient(
     to bottom,
-    rgba(0, 0, 0, .85),
-    rgba(0, 0, 0, 0.567),
-    rgba(0, 0, 0, .85));
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  z-index: 1;
+    rgba(50, 0, 0, 0.65),
+    rgba(20, 0, 0, 0.45),
+    rgba(0, 0, 0, 0.85)
+     );
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     z-index: 1;
+}
+
+.signin-banner{
+   background-image: url("images/netflix.red.png");
+   background-size: cover;
+   background-position: center;
+   position: relative;
+   min-height: 70vh;
+}
+
+.signin-footer{
+    background-color: #1a1a1a;
+    padding-top: 70px;
+    padding-left: 20px;
+    min-height: 25vh;
+}
+
+.footer-links{
+    display: flex;
+    gap: 280px;
+    margin-left: 150px;
+    color: white;
+    font-size: 13px;
+}
+
+.footer-column{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-number{
+    margin-top: 0px;
+    margin-left: 150px;
+    color: white;
+    font-size: 13px;
+}
+
+.footer-language{
+    margin-left: 150px;
 }
