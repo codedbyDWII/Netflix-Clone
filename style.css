@@ -7,28 +7,30 @@ body{
 }
 
 .logo{
-  width: 150px;
-  z-index: 2;
+    width: 12%;
+    max-width: 170px;
+    min-width: 90px;
+    z-index: 2;
 }
 
 .global-nav{
-  display:flex;
-  justify-content: space-between;
-  align-items: center;
-  position: relative;
-  z-index: 2;
-  padding: 20px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+    padding: 20px;
 }
 
 
 /* LANDING PAGE STYLES */
 
 .landing-banner{
-  background-image: url("https://assets.codepen.io/17809189/netflix-bg.jpg");
-  background-size: cover;
-  background-position: center;
-  height: 100vh;
-  position: relative;
+    background-image: url("https://assets.codepen.io/17809189/netflix-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    position: relative;
 }
 
 .landing-overlay{
@@ -44,89 +46,93 @@ body{
     z-index: 1; }
 
 .landing-hero{
-  display:flex;
-  flex-direction:column;
-  height: 50vh;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 2;
 }
 
 .landing-title{
-  color: white; 
-  font-size: 50px;
-  font-weight: 900;
-  line-height: 60px;
-  width: 560px;
-  margin: 5px;
-  margin-top: 200px;
-  margin-bottom: 6px;
-  text-align: center;
+    color: white; 
+    font-size: 40px;
+    font-weight: 900;
+    line-height: 60px;
+    max-width: 560px;
+    width: 90%;
+    text-align: center;
 }
 
 .landing-subtitle{
-  color: white;
-  margin: 0;
+    color: white;
+    margin: 0;
 }
 
 .landing-description{
-  font-size: 13px;
-  margin-bottom: 20px;
-  color: white;
+    font-size: 13px;
+    margin-bottom: 20px;
+    color: white;
 
 }
 
 .landing-input{
-  font-size: 13px;
-  width:340px;
-  height: 40px;
-  background-color: rgba(50, 50, 50, 70%);
-  border: 1px solid white;
-  border-radius: 5px;
-  padding-left: 15px;
+    font-size: 13px;
+    width: 100%;
+    max-width: 340px;
+    height: 40px;
+    background-color: rgba(50, 50, 50, 70%);
+    border: 1px solid white;
+    border-radius: 5px;
+    padding-left: 15px;
 }
 
 .landing-signup{
-  display:flex;
-  flex-direction:row;
-  height: 10vh;
-  justify-content: center;
-  align-items: center;
+    display:flex;
+    flex-direction:row;
+    height: 10vh;
+    justify-content: center;
+    align-items: center;
 }
 
 .started-button{
-  background-color: red;
-  border: 1px red;
-  font-size: 15px;
-  border-radius: 5px;
-  color: white;
-  font-weight: bold;
-  width: 250px;
-  height: 45px;
-  margin-left:10px;
+    background-color: red;
+    border: 1px red;
+    font-size: 15px;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    width: 250px;
+    height: 45px;
+    margin-left:10px;
+}
+
+.nav-right{
+    display: flex;
+    align-items: center;
+    gap: 12px;
 }
 
 .signin-button{
- display: inline-block;
-  background-color: red;
-  color: white;
-  text-decoration: none;
-  font-size: 12px;
-  font-weight: bold;
-  width: 80px;
-  height: 35px;
-  border-radius: 5px;
-  text-align: center;
-  line-height: 35px;
+    display: inline-block;
+    background-color: red;
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: bold;
+    width: 80px;
+    height: 35px;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 35px;
 }
 
 .landing-language{
-  background-color: rgba(50, 50, 50, 70%);
-  width: 90px;
-  height: 20px;
-  color: white;
-  border: 0.2px solid white;
+    background-color: rgba(50, 50, 50, 70%);
+    width: 90px;
+    height: 20px;
+    color: white;
+    border: 0.2px solid white;
 }
 
 /* SIGN-IN PAGE STYLES */
@@ -142,12 +148,12 @@ body{
 }
 
 .signin-title{
-  color: white; 
-  font-size: 30px;
-  font-weight: 900;
-  line-height: 20px;
-  margin-bottom: 5px;
-  text-align: center;
+    color: white; 
+    font-size: 30px;
+    font-weight: 900;
+    line-height: 20px;
+    margin-bottom: 5px;
+    text-align: center;
 }
 
 .signin-subtitle{
@@ -165,28 +171,28 @@ body{
 }
 
 .signin-input{
-  font-size: 13px;
-  width:340px;
-  height: 40px;
-  background-color: rgba(24, 24, 24, 0.7);
-  border: 1px solid red;
-  border-radius: 5px;
-  padding-left: 15px;
+    font-size: 13px;
+    width:340px;
+    height: 40px;
+    background-color: rgba(24, 24, 24, 0.7);
+    border: 1px solid red;
+    border-radius: 5px;
+    padding-left: 15px;
 }
 
 .continue-button{
-  display: inline-block;
-  background-color: red;
-  font-weight: bold;
-  color: white;
-  text-decoration: none;
-  font-size: 12px;
-  padding: 8px 16px;
-  border-radius: 5px;
-  border-color: red;
-  width: 360px;
-  height: 45px;
-  margin-left: 0;
+    display: inline-block;
+    background-color: red;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+    padding: 8px 16px;
+    border-radius: 5px;
+    border-color: red;
+    width: 360px;
+    height: 45px;
+    margin-left: 0;
 }
 
 .signin-help{
@@ -201,11 +207,14 @@ body{
     margin-right: 380px;
 }
 
+.help-dropdown{
+    display: none;
+}
+
 .captcha{
     color: gray;
     font-size: 10px;
     margin-right: 130px;
-
 }
 
 .signin-overlay{
@@ -233,31 +242,37 @@ body{
 
 .signin-footer{
     background-color: #1a1a1a;
-    padding-top: 70px;
-    padding-left: 20px;
-    min-height: 25vh;
+    padding: 50px 80px;
 }
 
 .footer-links{
     display: flex;
-    gap: 280px;
-    margin-left: 150px;
+    justify-content: space-between;
+    align-items: flex-start;
     color: white;
-    font-size: 13px;
+    font-size: 10px;
 }
 
 .footer-column{
     display: flex;
     flex-direction: column;
+    gap: 10px;
 }
 
 .footer-number{
-    margin-top: 0px;
-    margin-left: 150px;
+     display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
     color: white;
-    font-size: 13px;
+    font-size: 12px;
 }
 
 .footer-language{
-    margin-left: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 15px;
+    background-color: rgba(50, 50, 50, 70%);
+    color: white;
+    font-size: 10;
 }
