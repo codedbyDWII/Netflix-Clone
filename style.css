@@ -296,18 +296,22 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    color: white;
+    font-size: 14px;
 }
 
 .profile-image{
-    width: 200px;
-    height: 200px;
+    width: 180px;
+    height: 180px;
     border-radius: 50%;
     margin-bottom: 10px;
+    cursor: pointer;
+    transition: transform 0.3s;
+
 }
 
-.profile-name{
-    color: white;
-    font-size: 14px;
+.profile-image:hover{
+    transform: scale(1.18);
 }
 
 .profile-page{
@@ -316,4 +320,23 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+}
+
+.manage-button{
+    background: transparent;
+    color: #808080;
+    border: 3px solid #808080;
+
+    padding: 12px 35px;
+
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    cursor: pointer;
+    margin-top: 60px;
+}
+
+.manage-button:hover{
+    color: white;
+    border-color: white;
 }
